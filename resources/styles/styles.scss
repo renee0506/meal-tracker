@@ -1,7 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen');
+
 .container .jumbotron, .container-fluid .jumbotron {
   border-radius: 0;
 }
 
 .warning {
   color: #f25959;
+}
+
+#label {
+  position:absolute;
+  right:60px;
+}
+
+div.progress {
+  margin-bottom: 0px;
+}
+
+.col-md-6 {
+  border:1px solid #888888;
+  height:100vh;
+  padding:20px;
+  overflow: scroll;
+  background:rgba(255,255,255,0.8);
+}
+
+#left {
+  border-right: none;
+}
+
+body {
+  background: #2c631c;
+  font-family: 'Oxygen', sans-serif;
 }
