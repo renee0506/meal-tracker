@@ -11,9 +11,10 @@ import {Meal} from './meal.model';
     </ul>
     <ul class="list-unstyled">
       <li *ngFor = 'let meal of childMealList|calories: caloriesFilter'>
-      <h1>{{meal.name}}, {{meal.calories}}</h1>
+      <h1>{{meal.name}}, <span [class]='changeColor(meal.calories)'>{{meal.calories}}</span> Cals</h1>
+      <h4>{{meal.time}}</h4>
       <h4>{{meal.details}}</h4>
-      <button (click) = 'selectMeal(meal)' class='btn btn-info'>Update</button>
+      <button (click) = 'selectMeal(meal)' class='btn btn-info btn-sm'>Update</button>
       </li>
     </ul>
   `
@@ -30,6 +31,12 @@ export class MealListComponent {
 
   setFilter(filter: string){
     this.caloriesFilter = filter;
+  }
+
+  changeColor(number: number){
+    if (number >= 500){
+      return "warning";
+    }
   }
 
 }
