@@ -11,7 +11,7 @@ import { Meal } from './meal.model'
 })
 
 export class AppComponent {
-  masterMealList: Meal[] = [new Meal("Hamburger", "Didn't get a soda or cheese on my burger", 354), new Meal("Fries", "I only ate half of them.", 365), new Meal("chocolate cake", "Did not eat all the chocolates and cream", 300)];
+  masterMealList: Meal[] = [new Meal("Hamburger", "Didn't get a soda or cheese on my burger", 354), new Meal("Fries", "I only ate half of them.", 324), new Meal("chocolate cake", "Did not eat all the chocolates and cream", 539)];
   selectedEditMeal: Meal = null;
 
   addMeal(newMeal: Meal){
